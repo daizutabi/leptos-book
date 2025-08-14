@@ -15,9 +15,8 @@ fn App() -> impl IntoView {
     // it uses an HTML-like format that can accept certain Rust values
     view! {
         // on:click will run whenever the `click` event fires
-        <button // every event handler is defined as `on:{eventname}`
-
-        // we're able to move `set_count` into the closure
+        // every event handler is defined as `on:{eventname}`
+        <button // we're able to move `set_count` into the closure
         // because signals are Copy and 'static
 
         on:click=move |_| {
@@ -32,7 +31,7 @@ fn App() -> impl IntoView {
             // you can insert Rust expressions as values in the DOM
             // by wrapping them in curly braces
             // if you pass in a function, it will reactively update
-            {move || count.get()}
+            {move || count()}
         </p>
         <p>
             <strong>"Reactive shorthand: "</strong>
@@ -44,7 +43,7 @@ fn App() -> impl IntoView {
             <strong>"Not reactive: "</strong>
             // NOTE: if you just write {count.get()}, this will *not* be reactive
             // it simply gets the value of count once
-            {count.get()}
+            {count()}
         </p>
     }
 }
