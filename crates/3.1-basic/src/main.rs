@@ -14,8 +14,8 @@ fn App() -> impl IntoView {
     // the `view` macro is how we define the user interface
     // it uses an HTML-like format that can accept certain Rust values
     view! {
-        <button // on:click will run whenever the `click` event fires
-        // every event handler is defined as `on:{eventname}`
+        // on:click will run whenever the `click` event fires
+        <button // every event handler is defined as `on:{eventname}`
 
         // we're able to move `set_count` into the closure
         // because signals are Copy and 'static

@@ -1,10 +1,1 @@
-*.coverage*
-*.dll
-*.pyc
-*.pyd
-*.so
-.venv/
-Cargo.lock
-lcov.info
 target/
-uv.lock
