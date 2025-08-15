@@ -50,6 +50,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "app-3-4-iteration"
+version = "0.1.0"
+dependencies = [
+ "leptos",
+]
+
+[[package]]
 name = "async-lock"
 version = "3.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
