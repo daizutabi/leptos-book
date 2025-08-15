@@ -36,6 +36,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "app-3-10-passing"
+version = "0.1.0"
+dependencies = [
+ "leptos",
+]
+
+[[package]]
 name = "app-3-2-dynamic"
 version = "0.1.0"
 dependencies = [
